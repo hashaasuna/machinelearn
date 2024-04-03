@@ -26,4 +26,5 @@ urlpatterns = [
     path('terminalinfo/',getTerminalInfo),
     path('pssales/',getSales),
     path('ml/',ml.firstml),
+    path('analyz/',ml.analyz),
 ]

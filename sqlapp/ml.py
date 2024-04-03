@@ -40,7 +40,6 @@ import io
 import urllib, base64
 from rest_framework.decorators import api_view
 
-@api_view(['GET'])
 def firstml(request):
     rng = np.random.RandomState(1)
     x = 8 * rng.rand(50)
@@ -66,3 +65,6 @@ def firstml(request):
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
     return render(request, 'matplot.html',{'data':uri})
+
+def analyz(request):
+    return render(request, 'analyzing.html')

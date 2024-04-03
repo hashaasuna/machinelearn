@@ -7,10 +7,10 @@ from . models import Psterminalinfo
 from . import models
 # Register your models here.
 
-@admin.register(Psterminalinfo)
-class MyModelAdmin(admin.ModelAdmin):
-    list_display = ('cpnyid','perioddate','terminalid')
-    list_filter = ('terminalid', 'perioddate')
+# @admin.register(Psterminalinfo)
+# class MyModelAdmin(admin.ModelAdmin):
+#     list_display = ('cpnyid','perioddate','terminalid')
+#     list_filter = ('terminalid', 'perioddate')
     
-admin.site.register(models.Pssales)
-admin.site.register(models.Pssalesitem)
+# admin.site.register(models.Pssales)
+# admin.site.register(models.Pssalesitem)
