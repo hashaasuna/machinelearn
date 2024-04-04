@@ -59,6 +59,7 @@ def firstml(request):
     #Plot
     plt.scatter(x,y)
     fig = plt.gcf()
+    plt.close()
     buf = io.BytesIO()
     fig.savefig(buf, format = 'png')
     buf.seek(0)
